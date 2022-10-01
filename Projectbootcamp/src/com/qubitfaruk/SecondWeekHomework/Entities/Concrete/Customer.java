@@ -24,7 +24,6 @@ public class Customer {
     public ROLE getRole() {
         return role;
     }
-
     public void setRole(ROLE role) {
         this.role = role;
     }

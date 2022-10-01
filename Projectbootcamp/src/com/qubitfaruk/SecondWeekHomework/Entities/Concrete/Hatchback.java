@@ -9,7 +9,7 @@ public class Hatchback extends Car {
 
     public Hatchback(){
         super.setDailyRent(true);
-        super.setMonthlyRent(true);
+        super.setMonthlyRent(false);
     }
 
 
