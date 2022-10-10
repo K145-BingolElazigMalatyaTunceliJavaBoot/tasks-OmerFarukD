@@ -10,11 +10,13 @@ import java.util.List;
 
 public abstract class  BaseRoomCollection<TFruit> {
 
-    List<TFruit> fruits;
+   private List<TFruit> fruits;
 
     public BaseRoomCollection() {
-        this.fruits=new ArrayList<>();
+
+        this.fruits=new ArrayList<TFruit>();
     }
+
     public TFruit add(TFruit fruit){
         this.fruits.add(fruit);
         return  fruit;
