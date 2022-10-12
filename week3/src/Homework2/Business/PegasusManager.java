@@ -102,9 +102,8 @@ public class PegasusManager implements IPegasusService{
     @Override
     public void buyTicket(Seat seat) {
         for (Seat seat1:this.companyCollection.getAllPegasusSeats()){
-            if (!seat1.isEmpty()){
-                System.out.println("koltuk boş değil");
-                break;
+            if (!seat1.isEmpty() && seat==seat1){
+                System.out.println("Koltuk boş değil");
             }
             else{
                 seat1.setEmpty(false);
