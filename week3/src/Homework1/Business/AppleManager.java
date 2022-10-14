@@ -7,6 +7,7 @@ import Homework1.Rooms.AppleRoom;
 
 public class AppleManager implements IAppleService{
    private AppleRoom appleRoom;
+
     public AppleManager() {
         this.appleRoom=new AppleRoom();
     }

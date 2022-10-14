@@ -8,8 +8,8 @@ import Homework1.Entities.Type;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class  BaseRoomCollection<TFruit> {
-
+public abstract class  BaseRoomCollection<TFruit extends  Fruit> {
+// generics
    private List<TFruit> fruits;
 
     public BaseRoomCollection() {
@@ -25,5 +25,12 @@ public abstract class  BaseRoomCollection<TFruit> {
         return this.fruits;
     }
 
-    public abstract TFruit getByType();
+    public  TFruit getByType(){
+        for (TFruit fruit:this.fruits){
+            if (fruit.getType()!=null){
+                return fruit;
+            }
+        }
+        throw new NullPointerException("Aradığınız Meyve tipi Bulunamadı ");
+    }
 }

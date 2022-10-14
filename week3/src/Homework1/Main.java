@@ -20,7 +20,7 @@ public class Main {
         System.out.println( pearService.getByType().unitsInStock());
 
         System.out.println("--------------------CHERRY--------------------");
-        ICherryService cherryService=  new CherryManager();
+        ICherryService cherryService= new CherryManager();
         cherryService.getByType();
     }
 }
